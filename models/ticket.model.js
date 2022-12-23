@@ -2,7 +2,7 @@ const mongoose= require("mongoose");
 
 
 
-const SeatSchema = new mongoose.Schema(
+const TicketSchema = new mongoose.Schema(
   {
     BusId: { type: mongoose.ObjectId },
     seatNumber: { type: Number, required: true },
@@ -15,5 +15,5 @@ const SeatSchema = new mongoose.Schema(
 )
 
                                                                                                                                                                     
-const SeatModel = mongoose.model("Seat", SeatSchema);
-module.exports= SeatModel
+const TicketModel = mongoose.model("Seat", TicketSchema);
+module.exports= TicketModel
